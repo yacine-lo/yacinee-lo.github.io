@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet : Analyse des Tumeurs avec Shiny</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="portfolio.html" class="btn">Retour au Portfolio</a>
+        </nav>
+    </header>
+
+    <section class="project-detail container mt-5">
+        <div class="project-header text-center">
+            <h1>Analyse des Tumeurs avec une Application Shiny Interactive</h1>
+        </div>
+
+        <div class="project-description mt-4">
+            <h2>Le Défi</h2>
+            <p>
+                Imaginez que vous êtes face à un immense ensemble de données sur les tumeurs, avec des informations détaillées mais complexes. 
+                Votre mission : rendre ces données accessibles et compréhensibles grâce à une solution interactive et intuitive. 
+                Comment permettre aux utilisateurs d'explorer facilement des statistiques et des graphiques tout en révélant les secrets des tumeurs bénignes et malignes ? 
+                Voilà le défi que nous avons relevé.
+            </p>
+        </div>
+
+        <div class="project-description mt-4">
+            <h2>Notre Mission</h2>
+            <p>
+                Nous avions pour objectif de créer une interface interactive et fluide, permettant à un utilisateur, même novice en analyse de données, 
+                d’explorer les caractéristiques des tumeurs. 
+                À l’aide du langage R et du framework <strong>Shiny</strong>, nous avons conçu une application moderne et puissante capable de :
+            </p>
+            <ul>
+                <li>Afficher des tableaux statistiques clairs.</li>
+                <li>Visualiser des graphiques interactifs pour les variables clés.</li>
+                <li>Filtrer les données selon des critères comme l’âge, le sexe ou le diagnostic.</li>
+                <li>Étudier les relations linéaires grâce à des régressions dynamiques.</li>
+            </ul>
+        </div>
+
+        <div class="project-description mt-4">
+            <h2>La Solution</h2>
+            <p>
+                Après plusieurs itérations, nous avons développé une application avec quatre interfaces principales :
+            </p>
+            <h4>1. Accueil</h4>
+            <p>Cette interface donne une vue d'ensemble du projet et guide l'utilisateur vers les fonctionnalités principales.</p>
+
+            <h4>2. Statistiques Descriptives</h4>
+            <p>
+                Une section pour explorer les statistiques globales : moyennes, écarts types et répartition des données en fonction des diagnostics 
+                (bénin ou malin). Ici, l’utilisateur peut rapidement repérer les tendances.
+            </p>
+
+            <h4>3. Visualisation des Graphiques</h4>
+            <p>
+                À l'aide de bibliothèques comme <strong>ggplot2</strong>, cette section propose des graphiques dynamiques (boxplots, histogrammes) 
+                pour comparer les caractéristiques des tumeurs entre les deux groupes.
+            </p>
+
+            <h4>4. Régressions Linéaires</h4>
+            <p>
+                Un espace interactif pour analyser les relations entre les variables, identifier les corrélations significatives et prédire des diagnostics. 
+                Les modèles proposés sont affichés avec une visualisation en temps réel.
+            </p>
+        </div>
+
+        <div class="image-section mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Images/shiny-dashboard.png" alt="Dashboard interactif" class="img-fluid">
+                    <h5 class="text-center mt-2">Interface Utilisateur</h5>
+                    <p class="text-center">Un aperçu de l'application interactive.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/shiny-graph.png" alt="Graphiques dynamiques" class="img-fluid">
+                    <h5 class="text-center mt-2">Graphiques Dynamiques</h5>
+                    <p class="text-center">Explorez les caractéristiques grâce à des graphiques clairs.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/shiny-filter.png" alt="Filtrage des données" class="img-fluid">
+                    <h5 class="text-center mt-2">Filtrage Précis</h5>
+                    <p class="text-center">Affinez les résultats selon des critères spécifiques.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-description mt-5">
+            <h2>Résultats et Enseignements</h2>
+            <p>
+                Les principales observations de notre analyse :
+            </p>
+            <ul>
+                <li>Les tumeurs malignes présentent des cellules plus grandes et plus irrégulières.</li>
+                <li>Les variables extrêmes (worst) se révèlent particulièrement discriminantes.</li>
+                <li>Les tumeurs bénignes ont des contours plus réguliers et une homogénéité plus marquée.</li>
+            </ul>
+            <p>
+                Cette application a permis non seulement d’explorer les données efficacement, mais aussi de mettre en lumière 
+                des tendances essentielles pour différencier les diagnostics.
+            </p>
+        </div>
+    </section>
+
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2025 - Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

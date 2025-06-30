@@ -1,0 +1,198 @@
+/* Global Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Trebuchet MS, sans-serif;
+    background-color: #40625a;
+    color: white;
+    line-height: 1.8;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent header */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #f0e68c;
+}*/
+
+/* Carousel Styling */
+.carousel-item img {
+    width: 100%; /* Toujours occuper toute la largeur */
+    height: 500px; /* Hauteur uniforme */
+    object-fit: cover; /* Remplir l'espace sans déformer */
+    border-radius: 10px; /* Bords arrondis */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    bottom: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+}
+
+/* Project Detail Section */
+.project-detail {
+    padding: 120px 10% 50px;
+}
+
+/* Titres et texte de la section Storytelling */
+.project-description h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f0e68c; /* Couleur dorée */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Ombre douce sur les titres */
+}
+
+.project-description p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e0e0e0; /* Texte gris clair */
+    margin-bottom: 15px;
+}
+
+.project-description ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.project-description ul li {
+    list-style-type: square;
+    margin-bottom: 10px;
+    color: #f0e68c; /* Points de liste dorés */
+    font-size: 18px;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Boîtes d'images avec effet */
+.image-box {
+    background-color: #2c3e4f; /* Fond des boîtes d'images */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: calc(33.333% - 20px); /* Trois colonnes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box:hover {
+    transform: translateY(-5px); /* Décalage vers le haut au survol */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Ombre plus marquée */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 300px; /* Limite la taille maximale de l'image */
+    object-fit: cover; /* Remplir l'espace sans distorsion */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.05); /* Agrandissement léger au survol */
+}
+
+.image-box img:active {
+    transform: scale(0.95); /* Réduction au clic */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au clic */
+    transition: transform 0.1s ease; /* Effet plus rapide au clic */
+}
+
+.image-box h4 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #f0e68c; /* Couleur dorée pour les titres d'images */
+    font-weight: bold;
+}
+
+.image-box p {
+    font-size: 16px;
+    color: #e0e0e0; /* Texte gris clair */
+}
+
+/* Buttons and Links */
+button, .btn {
+    background-color: #f0e68c;
+    color: #40625a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #f5d76e;
+    color: #2c3e4f;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .image-box {
+        width: 100%; /* Empile les images sur les petits écrans */
+    }
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .project-description p {
+        font-size: 16px; /* Texte plus petit sur mobile */
+    }
+
+    .project-description h2 {
+        font-size: 24px; /* Taille réduite des titres */
+    }
+}
